@@ -4,7 +4,7 @@ BOWLING GREEN, KY 42104
 * PHONE: (859) 457-6556
 * EMAIL: ryan.peach@outlook.com* WEB:   htttp://www.ryan-peach.com/
 ## PROFILE
-OBJECTIVE: Seeking to begin a career in Electrical Engineering from undergraduate studies and internship experience.AVAILABILITY: Beginning May 18th, 2015
+OBJECTIVE: Seeking to move to Mississippi and continue a career in Computer Science and Electrical Engineering.AVAILABILITY: Beginning May 1st, 2018
 ## EDUCATION & AWARDS
 ### Georgia Tech Institute of Technology, Atlanta, GA - Jan. 2016 - Dec. 2018
 Masters of Science in Computer Science
