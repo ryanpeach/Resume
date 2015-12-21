@@ -30,7 +30,7 @@
 ### Institute for Combustion Science and Technology, WKU
 **Electrical Engineer (Signals & Amplification)** - *Jan. 2015 - May 2015*
 * Worked with physicists and other researchers in designing rigs for experimentation.
-* Helped design applications of Atomic Force Microscopes, Piezoelectric material, Signal Amplifiers, and Terra-hertz Lasers.  Designed PCB's  & programmed FPGA's.
+* Helped design applications of Atomic Force Microscopes, Piezoelectric material, Signal Amplifiers, and Terra-hertz Lasers. Designed PCB's  & programmed FPGA's.
 
 ### Applied Physics Institute, Center for Research & Development, WKU
 **Student Electrical Engineer (PCB Design, Embedded Systems)** - *May 2014 - Dec. 2014*
