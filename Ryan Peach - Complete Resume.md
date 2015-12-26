@@ -55,7 +55,7 @@
 
 ## KEY SKILLS
 ### Programming
-Java, Python (Numpy, SciPy, Pandas, etc.), C, C++, Assembly, PLC Ladder Logic, Structured Ladder, Structured Text, SFC,  LabVIEW (CLAD Certified), MatLab, Simulink, Git, LaTeX, Shell, Android Programming, HTML/CSS, VHDL, Verilog, Networking, RS232/485, Modbus, Arduino
+Java, Scala, Python (Numpy, SciPy, Pandas, etc.), C, C++, Assembly, PLC Ladder Logic, Structured Ladder, Structured Text, SFC,  LabVIEW (CLAD Certified), MatLab, Simulink, Git, LaTeX, Shell, Android, HTML/CSS, VHDL, Verilog, Networking, RS232/485, Modbus, Arduino, OpenSCAD
 ### Systems
 Allen-Bradley, Mitsubishi, Motoman, Proface HMI's, AutoCAD, MultiSIM, Eagle, Maxwell 3D, Unix, Linux, Windows, MS Office
 ### Concepts
@@ -110,6 +110,11 @@ Summer 2013
 -->
 
 ## PERSONAL PROJECTS
+### 3DBook – 3D Printed Braille Literature
+* Open-source software written in OpenSCAD and Python used for the generation of 3D Printer (.stl) files containing full text documents written in braille, printed and bound.
+* Enables blind individuals worldwide to access any literature with readily available tools.
+* Suggested for admission into the Touch of Genius award by National Braille Press.
+
 ### OpenScan
 *Winter 2015*
 * Developed collaborative international open-source C++ and Android Application.
