@@ -134,7 +134,7 @@
 \section{Certifications}
   \resumeSubHeadingListStart
     \resumeSubSubheading
-    {AWS Cloud Practicioner}{2018}  % TODO: Check this date
+    {AWS Cloud Practitioner}{2018}  % TODO: Check this date
     \resumeSubSubheading
     {LabVIEW CLAD Certification}{Expired May 2015}
   \resumeSubHeadingListEnd
@@ -145,9 +145,13 @@
     \resumeSubSubheading
     {Python, Scientific Stack, Expert}{7 Years}
     \resumeSubSubheading
-    {Devops (Git, Jenkins, UNIX), Onboarding, Interviewing, Code Review Leader}{3 Years}
+    {DevOps (Git, Jenkins, UNIX), Onboarding, Interviewing, Code Review Leader}{3 Years}
     \resumeSubSubheading
     {AWS Cloud Architecture, Big Data and Distributed Compute}{3 Years}
+    \resumeSubSubheading
+    {Time series data acquisition and analysis.}{10 years}
+    \resumeSubSubheading
+    {Reinforcement Learning.}{5 years}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
@@ -155,14 +159,41 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Undergraduate Research Assistant}{June 2020 -- Present}
-      {Texas A\&M University}{College Station, TX}
+      {Machine Learning Researcher}{August 2017 -- Present}
+      {Keysight Technologies}{Atlanta, GA}
+      \resumeSubSubheading
+      {Lead Architect}{}
       \resumeItemListStart
-        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
-        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
-        \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+        \resumeItem{Built a cloudformation stack using docker that spins up
+          thousands of docker containers to train models and select the best
+          ones, turning weeks of compute into hours.}
+        \resumeItem{Build from scratch a cloudformation template including
+          lambda functions for backend API calls, databases for big data
+          applications, ECS for container-based microservices and scalable
+          compute.}
+        \resumeItem{Led the team in code reviews, managed all the DevOps for
+          the team including managing the git repo and the Jenkins CI/CD.}
       \resumeItemListEnd
-      
+      \resumeSubSubheading
+      {Machine Learning Research}{}
+      \resumeItemListStart
+        \resumeItem{Independently investigated almost a dozen potential ML
+          applications at the company, providing preliminary results and
+          feasibility studies.}
+        \resumeItem{Promoted from Developer to Researcher within only 1 year
+          without a Ph.D. due to outstanding performance. Won top 10\% performer
+          3 years in a row.}
+        \resumeItem{Led most investigations alongside Ph.D. researchers.}
+      \resumeItemListEnd
+      \resumeSubSubheading
+      {Leadership}{}
+      \resumeItemListStart
+        \resumeItem{Interviewed over a dozen candidates over 3 years.}
+        \resumeItem{Onboarded 3 coworkers in python best practices and
+          professional software design principles.}
+      \resumeItemListEnd
+
+
 % -----------Multiple Positions Heading-----------
 %    \resumeSubSubheading
 %     {Software Engineer I}{Oct 2014 - Sep 2016}
@@ -174,49 +205,23 @@
 %-------------------------------------------
 
     \resumeSubheading
-      {Information Technology Support Specialist}{Sep. 2018 -- Present}
-      {Southwestern University}{Georgetown, TX}
+      {Electrical Engineer}{2015 -- 2017}
+      {Nasco NHK}{Bowling Green, KY}
       \resumeItemListStart
-        \resumeItem{Communicate with managers to set up campus computers used on campus}
-        \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
-        \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
-    \resumeItemListEnd
+        \resumeItem{Programmed PLC's and Yaskawa Robotic Automation}
+        \resumeItem{Designed Electrical Cabinets and PLC networking systems.}
+      \resumeItemListEnd
 
     \resumeSubheading
-      {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
-      {Southwestern University}{Georgetown, TX}
+      {Miscellaneous}{2013 -- 2015}
+      {Western Kentucky University}{Bowling Green, KY}
       \resumeItemListStart
-        \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
-        \resumeItem{Developed a game in Java to test the generated dungeons}
-        \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
-        \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
-        \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
-        \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+        \resumeItem{Worked in PCB design, microprocessors, and FPGA programming.}
+        \resumeItem{Worked in electronic data acquisition around my university for multiple labs.}
+        \resumeItem{Worked for DHS analyzing social media time series patterns in Python.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-
-
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
-          \resumeItemListStart
-            \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
-            \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
-            \resumeItem{Visualized GitHub data to show collaboration}
-            \resumeItem{Used Celery and Redis for asynchronous tasks}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
-          \resumeItemListStart
-            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
-            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
-            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
-            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
 
 
 %-----------PROGRAMMING SKILLS-----------
@@ -225,10 +230,40 @@
     \small{\item{
      \textbf{Languages}{: Python, C/C++, Bash/Unix, Scala/Spark, SQL, Cloudformation} \\
      \textbf{Developer Tools}{: Git, Docker, Kubernetes, Jenkins, AWS, PyCharm, Linux} \\
-     \textbf{Libraries}{: numpy, scipy, pandas, matplotlib, pytorch, boto3, etc.}
+     \textbf{Libraries}{: Numpy, Scipy, Pandas, Matplotlib, PyTorch, Tensorflow, boto3, etc.}
     }}
  \end{itemize}
 
+ % --------- Community --------
+ \section{Community}
+   \resumeSubHeadingListStart
+   \resumeSubSubheading
+   {Open Source Contribution}{}
+   \resumeItemListStart
+     \resumeItem{\href{https://github.com/rsteca/sklearn-deap}{\underline{rsteca/sklearn-deap}}
+     (\#1 Contributor)}
+     \resumeItem{\href{https://github.com/Zsailer/nx_altair}{\underline{Zsailer/nx\_altair}}
+     (\#2 Contributor)}
+     \resumeItem{\href{https://github.com/NervanaSystems/coach}{\underline{NervanaSystems/coach}}
+     (\#13 Contributor)}
+     \resumeItem{\href{https://github.com/godotengine/godot}{\underline{godotengine/godot}}}
+   \resumeItemListEnd
+   \resumeSubSubheading
+   {Open Source Creations}{}
+   \resumeItemListStart
+     \resumeItem{\href{https://github.com/ryanpeach/lifechoices}{\underline{ryanpeach/lifechoices}}}
+     \resumeItem{\href{https://github.com/ryanpeach/vrplot}{\underline{ryanpeach/vrplot}}}
+     \resumeItem{\href{https://github.com/ryanpeach/openscan}{\underline{ryanpeach/openscan}}}
+     \resumeItem{\href{https://github.com/ryanpeach/goflow}{\underline{ryanpeach/goflow}}}
+     \resumeItem{\href{https://github.com/ryanpeach/3dbook}{\underline{ryanpeach/3dbook}}}
+     \resumeItem{\href{https://github.com/ryanpeach/routinesappios}{\underline{ryanpeach/routinesappios}}}
+   \resumeItemListEnd
+   \resumeSubSubheading
+   {Local Activities}{}
+   \resumeItemListStart
+     \resumeItem{\href{https://www.meetup.com/python-atlanta/}{\underline{PyATL}} -- Frequent Speaker on Machine Learning and Data Science in Python}
+   \resumeItemListEnd
+ \resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
