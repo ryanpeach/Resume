@@ -1,0 +1,91 @@
+
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[]{letter}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+% \addtolength{\oddsidemargin}{-0.5in}
+% \addtolength{\evensidemargin}{-0.5in}
+% \addtolength{\textwidth}{1in}
+% \addtolength{\topmargin}{-.5in}
+% \addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+\begin{document}
+
+\begin{letter}{Company}
+
+    \begin{center}
+        \textbf{\Huge \scshape Ryan Peach} \\ \vspace{1pt}
+        \small (859) 457-6556 $|$ \href{mailto:rgpeach10+jobs@icloud.com}{\underline{rgpeach10+jobs@icloud.com}} $|$
+        \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/ryan-peach}} $|$
+        \href{https://github.com/...}{\underline{github.com/ryanpeach}}
+    \end{center}
+
+    \opening{Dear {{ FULL_EMPLOYER_NAME }}}
+    
+    My name is Ryan Peach. I am an incredibly skilled Machine Learning Architect, with 3 years on the job experience with a variety of Machine Learning projects, 3 years of education in my Masters of Science specializing in Machine Learning, and over 7 years professional and personal programming experience primarily in Python. I consider myself an expert in the Python programming language especially as it relates to data and numerical processing, coming from a background going back to my undergrad experience in Matlab and an internship at the DHS in 2013 where I was first exposed to the language.
+
+    I have been an incredible asset to my current employer in terms of providing leadership to my team. Prior to this job, I had an Electrical Engineering job in a hot factory focusing on control systems programming (PLC's), where hard work was paramount. During that job, I also worked on my Masters in parallel, which is a credit to my work ethic. When taking my current position, I was the first person hired in my team. Though I had little work experience in the particular research field of Machine Learning, my existing work experience gave me the leadership experience I needed to onboard the team in Python, work in an international work environment, speak up during meetings and brainstorm ideas, and work through the night and weekends to accelerate my output relative to my peers, ultimately becoming the most highly valued member of the team each year I was reviewed. My diversity of work experience and my lifetime of programming experience makes me a generalist in a field where Ph.D's dominate as specialists, and this often gives me the opportunity to hire and train Ph.D's in the specifics of on the job software development. Further, I gained experience leading the team in DevOps CI/CD, Code Review and Standards Development, and AWS Architecture specific to Big Data and Machine Learning which is where I believe my skills really stand out.
+    
+    In my Masters and on-the-job, I have had a real passion for applying Reinforcement Learning (RL) concepts to most of my areas of research. Reinforcement Learning has very interesting architecture challenges and very broad problem solving capabilities which very much appeal to me, and the concept of game playing makes the field particularly fun and interesting to be in. I have used Monte Carlo Tree Search and Q learning to solve advanced sequence reordering problems and other classical algorithms faster-than-normal on the job, when no one else on the team had even heard of RL methods. Running reinforcement learning models frequently requires clusters of networked machines running copies of agents on copies of environments, sending updates back to a central unit, and then to tune hyper-parameters often requires further copies of this entire architecture. These are the kinds of architecture and compute problems I most desire to work on, and I have done similar at my current job. We currently turn on thousands of docker containers to test and train thousands-of-thousands of models at scale using AWS Fargate, orchestrated by AWS Lambda, and send the best models back for further testing to a centralized database for future use. I work with a lot of hyper-parameter tuning and autoML at scale using AWS SageMaker and HyperOpt, even contributing personally to sklearn-deap on GitHub. Working on Big Compute in Machine Learning really is the only way to do the most modern and interesting research in the field these days, and Ph.D's out of school often do not have the skills to bring their ideas to reality. A good Machine Learning Architect bridges this gap for everyone.
+    
+    If this is something that Volvo Group may be interested in, please do not hesitate to contact me and we will arrange a meeting. I would be really happy to hear back form you. I am a hundred percent sure that I would be a perfect match for this position.
+
+    Thank you in advance and all the best to the group,
+    
+    \closing{Regards}
+    \signature{Ryan Peach}
+
+% -------------------------------------------
+\end{letter}
+\end{document}
