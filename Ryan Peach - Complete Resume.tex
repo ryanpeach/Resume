@@ -104,6 +104,7 @@
 
 
 \begin{document}
+\pagecolor{white}
 
 %----------HEADING----------
 % \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
@@ -148,11 +149,11 @@
     \resumeSubSubheading
     {Python Scientific Stack, Data Science}{Expert, 2013-Present}
     \resumeSubSubheading
+    {Docker, Kubernetes, AWS}{Expert, 2017-Present}
+    \resumeSubSubheading
     {Machine Learning: Deep Learning, Reinforcement Learning}{MS, 2015-Present}
     \resumeSubSubheading
     {Large Language Models: Safety, Advising, API Tools, Open Source Development}{Advanced, 2022-Present}
-    \resumeSubSubheading
-    {DevOps, Docker, Kubernetes, AWS, CICD, Linux}{Expert, 2017-Present}
     \resumeSubSubheading
     {Engineering: 3D Printing, PCB Design, OnShape}{BS, 2010-Present}
     \resumeSubSubheading
@@ -167,19 +168,45 @@
       {Senior Principal Engineer}{2023-Present}
       {Ansys / Synopsys}{Atlanta, GA}
       \resumeSubSubheading
-        {Architecture}{}
+      {Architecture}{}
+      \resumeItemListStart
+      	\resumeItem{Advised and participated in transition from single team Kubernetes infrastructure to enterprise infrastructure.}
+	\resumeItem{Architected globally available infrastructure, designed and maintained authoritative infrastructure diagrams covering approximately dozens of interoperating services.}
+	\resumeItem{Designed GraphQL, gRPC, and OpenAPI API's for core backend services.}
+      \resumeItemListEnd
       \resumeSubSubheading
-        {Large Language Models}{}
+      {Large Language Models}{}
+      \resumeItemListStart
+      	\resumeItem{Participated in early open source efforts with langchain, llama index, etc. Contributing code to repos.}
+	\resumeItem{Advised on company llm projects across multiple teams, attended Microsoft conference on llm research}
+      \resumeItemListEnd
         
     \resumeSubheading
       {Director of Cloud Devops}{2021-2023}
       {OnScale}{Atlanta, GA}
       \resumeSubSubheading
-        {Architecture}{}
+      {Architecture}{}
+      \resumeItemListStart
+      	\resumeItem{Managed custom kubernetes controller which managed simulation jobs on high-performance compute (HPC) infrastructure.}
+	\resumeItem{Refactored and modernized Infrastructure as Code (IasC)}
+	\resumeItem{Managed AWS pricing, SEV0 outages, observability, and data analytics}
+      \resumeItemListEnd
       \resumeSubSubheading
-        {Machine Learning}{}
+      {Machine Learning}{}
+      \resumeItemListStart
+      	\resumeItem{Advised on ML Pipeline which predicted simulation time based on simulation metrics prior to runtime. Giving customer an estimate of pricing.}
+	\resumeItem{ML Pipeline needed to automatic retrain on new data periodically so advised on ETL and Sagemaker training}
+      \resumeItemListEnd
       \resumeSubSubheading
-        {Management}{}
+      {Management}{}
+      \resumeItemListStart
+         \resumeItem{Completely up and running within 2 weeks of hiring due to leadership transition.}
+         \resumeItem{Directed all employees and decisions on Backend, Architecture, and ML projects.}
+     	 \resumeItem{Managed ML, HPC, Data, and Devops teams during Ansys acquisition.}
+	 \resumeItem{Transitioned to technical track after transitioning all teams to new management under Ansys.}
+      \resumeItemListEnd
+
+    \newpage
 
     \resumeSubheading
       {Machine Learning Researcher - Lead Architect}{2017 -- 2021}
@@ -235,14 +262,14 @@
 %    \resumeSubHeadingListEnd
 %-------------------------------------------
 
-    \resumeSubheading
-      {Electrical Engineer}{2015 -- 2017}
-      {Nasco NHK}{Bowling Green, KY}
-      \resumeItemListStart
-        \resumeItem{Programmed PLC's and Yaskawa Robotic Automation.}
-        \resumeItem{Designed Electrical and Networking systems using AutoCAD.}
-        \resumeItem{HMI dashboard creation for user interaction with the machines.}
-      \resumeItemListEnd
+%    \resumeSubheading
+%      {Electrical Engineer}{2015 -- 2017}
+%      {Nasco NHK}{Bowling Green, KY}
+%      \resumeItemListStart
+%        \resumeItem{Programmed PLC's and Yaskawa Robotic Automation.}
+%        \resumeItem{Designed Electrical and Networking systems using AutoCAD.}
+%        \resumeItem{HMI dashboard creation for user interaction with the machines.}
+%      \resumeItemListEnd
 
 %    \resumeSubheading
 %      {Data Analyst Intern}{2013}
@@ -284,38 +311,39 @@
  \section{Community}
    \resumeSubHeadingListStart
    \resumeSubSubheading
-   {Open Source Contribution}{}
-%   \resumeItemListStart
-%     \resumeItem{\href{https://github.com/rsteca/sklearn-deap}{\underline{rsteca/sklearn-deap}}
-%     (\#1 Contributor)}
-%     \resumeItem{\href{https://github.com/Zsailer/nx_altair}{\underline{Zsailer/nx\_altair}}
-%     (\#2 Contributor)}
-%     \resumeItem{\href{https://github.com/NervanaSystems/coach}{\underline{NervanaSystems/coach}}
-%     (\#13 Contributor)}
-%     \resumeItem{\href{https://github.com/godotengine/godot}{\underline{godotengine/godot}}}
-%   \resumeItemListEnd
+   {Open Source Contributions}{}
+   \resumeItemListStart
+      \resumeItem{\href{https://github.com/run-llama/llama_index/issues?q=is\%3Apr\%20author\%3A\%40me}{\underline{run-llama/llama\_index}}}
+      \resumeItem{\href{https://github.com/OpenHands/OpenHands/issues?q=is\%3Apr\%20author\%3A\%40me}{\underline{OpenHands/OpenHands}}}
+      \resumeItem{\href{https://github.com/guidance-ai/guidance/issues?q=is\%3Apr\%20author\%3A\%40me}{\underline{guidance-ai/guidance}}}
+   \resumeItemListEnd
    \resumeSubSubheading
-   {Open Source Creations}{}
-%   \resumeItemListStart
+   {Open Source Creations (including Archives)}{}
+   \resumeItemListStart
+   \resumeItem{\href{https://github.com/ryanpeach/obsidianlinker}{\underline{ryanpeach/obsidianlinker}} (In Progress) - Obsidian Plugin which detects and repairs broken wikilinks, duplicate files, and missing aliases.}
+   \resumeItem{\href{https://github.com/ryanpeach/continuing_education}{\underline{ryanpeach/continuing\_education}} (In Progress) - A python repo where I track ML papers and do replications.}
+   \resumeItem{\href{https://github.com/ryanpeach/mdlinker}{\underline{ryanpeach/mdlinker}} (Archived) - The historic (rust) version of the above linker plugin, runs at git pre-commit.}
+   \resumeItem{\href{https://github.com/ryanpeach/orbitingsandrust}{\underline{ryanpeach/orbitingsandrust}} (Archived) - A game physics engine I worked on in Rust which I think really demonstrates my rust code and code quality.}
 %     \resumeItem{\href{https://github.com/ryanpeach/lifechoices}{\underline{ryanpeach/lifechoices}}}
 %     \resumeItem{\href{https://github.com/ryanpeach/vrplot}{\underline{ryanpeach/vrplot}}}
 %     \resumeItem{\href{https://github.com/ryanpeach/openscan}{\underline{ryanpeach/openscan}}}
 %     \resumeItem{\href{https://github.com/ryanpeach/goflow}{\underline{ryanpeach/goflow}}}
 %     \resumeItem{\href{https://github.com/ryanpeach/3dbook}{\underline{ryanpeach/3dbook}}}
 %     \resumeItem{\href{https://github.com/ryanpeach/routinesappios}{\underline{ryanpeach/routinesappios}}}
-%   \resumeItemListEnd
+   \resumeItemListEnd
    \resumeSubSubheading
    {Local Activities}{}
-%   \resumeItemListStart
-%     \resumeItem{\href{https://www.meetup.com/python-atlanta/}{\underline{PyATL
-%           (Python Atlanta)}} -- Frequent Speaker on Machine Learning and Data Science in Python.}
-%   \resumeItemListEnd
+   \resumeItemListStart
+     \resumeItem{\href{https://www.meetup.com/python-atlanta/}{\underline{PyATL
+           (Python Atlanta)}} -- Frequent Speaker on Machine Learning and Data Science in Python.}
+   \resumeItemListEnd
    \resumeSubHeadingListEnd
 
 % Keywords
 
    \vspace*{\fill}
    \begin{center}
+   \color{white}
    \tiny{\bf Keywords:}
 \tiny{\it Python (Numpy, SciPy, Pandas, etc.), C, C++, Rust, Golang, Swift, Clojure,
   Haskell, Java, Scala, Pytorch, Tensorflow, Assembly, PySpark, AWS
