@@ -1,0 +1,35 @@
+name: Check Build
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  check-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-latex-base texlive-latex-extra pandoc
+
+      - name: Run build script
+        run: ./build.sh
+
+      - name: Check for uncommitted changes
+        run: |
+          git diff --exit-code || (echo "Error: Build generated changes. Please run ./build.sh and commit the generated files." && exit 1)
+          git diff --cached --exit-code || (echo "Error: Build generated staged changes. Please run ./build.sh and commit the generated files." && exit 1)
+
+      - name: Verify generated files exist
+        run: |
+          if [ ! -f "Ryan Peach - Complete Resume.pdf" ]; then
+            echo "Error: PDF was not generated"
+            exit 1
+          fi
+          echo "All files generated successfully!"
