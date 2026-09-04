@@ -122,7 +122,7 @@
 
 %-----------STATEMENT-----------
 \begin{center}
-\textbf{Objective}: Senior specialist in AI and Cloud Technologies seeking meaningful, impact-driven work.
+\textbf{Objective}: Senior infrastructure engineer with a decade of experience running large-scale distributed systems on AWS and Kubernetes, including custom controllers for high-performance compute workloads.
 \end{center}
 
 
@@ -148,13 +148,15 @@
 \section{Major Skills}
   \resumeSubHeadingListStart
     \resumeSubSubheading
-    {Python Scientific Stack, Data Science}{Expert, 2013-Present}
-    \resumeSubSubheading
     {Docker, Kubernetes, AWS}{Expert, 2017-Present}
     \resumeSubSubheading
-    {Machine Learning: Deep Learning, Reinforcement Learning}{MS, 2015-Present}
+    {CI/CD \& DevOps: GitHub Actions, Jenkins, GitOps, Helm}{Expert, 2017-Present}
     \resumeSubSubheading
-    {Large Language Models: Safety, Architecture, API Tools, Open Source Development}{Advanced, 2022-Present}
+    {Infrastructure as Code: Terraform, CloudFormation}{Expert, 2017-Present}
+    \resumeSubSubheading
+    {Python Scientific Stack, Data Science}{Expert, 2013-Present}
+    \resumeSubSubheading
+    {Machine Learning: Deep Learning, Reinforcement Learning}{MS, 2015-Present}
     \resumeSubSubheading
     {Engineering: 3D Printing, PCB Design, OnShape}{BS, 2010-Present}
     \resumeSubSubheading
@@ -188,26 +190,26 @@
       \resumeSubSubheading
       {Architecture}{}
       \resumeItemListStart
-      	\resumeItem{Managed custom Kubernetes controller which managed simulation jobs on high-performance compute (HPC) infrastructure.}
-	\resumeItem{Refactored and modernized Infrastructure as Code (IaC).}
-	\resumeItem{Managed AWS pricing, SEV0 outages, observability, and data analytics}
+        \resumeItem{Executed a strangler fig migration from a monolithic API to a microservices architecture, enabling independent deployments and clear team ownership.}
+        \resumeItem{Applied Domain-Driven Design to decompose the platform into bounded contexts; established explicit API contracts between services enforced via OpenAPI specs.}
+        \resumeItem{Authored and maintained C4 architecture diagrams as the authoritative platform reference across the engineering org.}
+        \resumeItem{Managed custom Kubernetes controller orchestrating simulation jobs on high-performance compute (HPC) infrastructure.}
+        \resumeItem{Mandated GitOps workflows org-wide; overhauled CI/CD pipelines to enforce branch protection, automated testing, and deployment gates.}
+        \resumeItem{Stood up full observability stack (metrics, distributed tracing, structured logging) and led FinOps practice — reducing cloud spend while improving incident response.}
       \resumeItemListEnd
       \resumeSubSubheading
-      {Machine Learning}{}
+      {ML Infrastructure}{}
       \resumeItemListStart
-      	\resumeItem{Managed team and cloud resources for development of ML Pipeline which predicted simulation time based on simulation metrics prior to runtime, giving customer an estimate of pricing.}
-	\resumeItem{ML Pipeline needed to automatically retrain on new data periodically so architected ETL and SageMaker training}
+        \resumeItem{Architected end-to-end ML pipeline on AWS: ETL ingestion, ECS-based training, and automated periodic retraining — enabling a customer-facing simulation cost estimator.}
+        \resumeItem{Owned cloud resource allocation and cost governance for the ML platform, balancing training throughput against AWS spend.}
       \resumeItemListEnd
       \resumeSubSubheading
-      {Management}{}
+      {Engineering Leadership}{}
       \resumeItemListStart
-         \resumeItem{Completely up and running within 2 weeks of hiring due to leadership transition.}
-         \resumeItem{Directed all employees and decisions on Backend, Architecture, and ML projects.}
-     	 \resumeItem{Managed ML, HPC, Data, and DevOps teams during Ansys acquisition.}
-	 \resumeItem{Transitioned to technical track after transitioning all teams to new management under Ansys.}
+        \resumeItem{Organized teams around blast radius boundaries — each team owned a bounded set of services with defined failure domains and on-call scope.}
+        \resumeItem{Led HPC, Infrastructure, and ML teams through the Ansys acquisition, transitioning all to new management upon integration.}
+        \resumeItem{Managed teams through Ansys acquisition; transitioned all teams to new management before moving to technical track.}
       \resumeItemListEnd
-
-    \newpage
 
     \resumeSubheading
       {Machine Learning Researcher - Lead Architect}{2017 -- 2021}
@@ -302,41 +304,11 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Primary Languages}{: Python, Rust, TypeScript, Bash/Unix, PostgreSQL, Terraform, CloudFormation} \\
+     \textbf{Primary Languages}{: Python, Rust, Bash/Unix, PostgreSQL, Terraform, CloudFormation} \\
      \textbf{Additional Known Languages}{: Golang, C/C++, C\#, Java, Haskell, Clojure, Spark/Scala, Cypher} \\
-     \textbf{Technologies}{: Git, Docker, Kubernetes, Supabase, Redis, MongoDB, DynamoDB, Neo4j, GitHub Actions, AWS, Ansible, Datadog, Linux}
+     \textbf{Technologies}{: Git, Docker, Kubernetes, ECS, Supabase, Redis, MongoDB, DynamoDB, Neo4j, GitHub Actions, AWS, Datadog, Linux}
     }}
  \end{itemize}
 
- % --------- Community --------
- \section{Community}
-   \resumeSubHeadingListStart
-   \resumeSubSubheading
-   {Open Source Contributions}{}
-   \resumeItemListStart
-      \resumeItem{\href{https://github.com/run-llama/llama_index/issues?q=is\%3Apr\%20author\%3A\%40me}{\underline{run-llama/llama\_index}}}
-      \resumeItem{\href{https://github.com/OpenHands/OpenHands/issues?q=is\%3Apr\%20author\%3A\%40me}{\underline{OpenHands/OpenHands}}}
-      \resumeItem{\href{https://github.com/guidance-ai/guidance/issues?q=is\%3Apr\%20author\%3A\%40me}{\underline{guidance-ai/guidance}}}
-   \resumeItemListEnd
-   \resumeSubSubheading
-   {Open Source Creations (including Archives)}{}
-   \resumeItemListStart
-   \resumeItem{\href{https://github.com/ryanpeach/continuing_education}{\underline{ryanpeach/continuing\_education}} (In Progress) - A Python repo where I track ML papers and do replications.}
-   \resumeItem{\href{https://github.com/ryanpeach/mdlinker}{\underline{ryanpeach/mdlinker}} (Archived) - Rust executable that runs at git pre-commit to detect and repairs broken wikilinks, duplicate files, and missing aliases in Obsidian and similar markdown note taking apps.}
-   \resumeItem{\href{https://github.com/ryanpeach/orbitingsandrust}{\underline{ryanpeach/orbitingsandrust}} (Archived) - A game physics engine I worked on in Rust which I think demonstrates my Rust code quality.}
-%     \resumeItem{\href{https://github.com/ryanpeach/lifechoices}{\underline{ryanpeach/lifechoices}}}
-%     \resumeItem{\href{https://github.com/ryanpeach/vrplot}{\underline{ryanpeach/vrplot}}}
-%     \resumeItem{\href{https://github.com/ryanpeach/openscan}{\underline{ryanpeach/openscan}}}
-%     \resumeItem{\href{https://github.com/ryanpeach/goflow}{\underline{ryanpeach/goflow}}}
-%     \resumeItem{\href{https://github.com/ryanpeach/3dbook}{\underline{ryanpeach/3dbook}}}
-%     \resumeItem{\href{https://github.com/ryanpeach/routinesappios}{\underline{ryanpeach/routinesappios}}}
-   \resumeItemListEnd
-   \resumeSubSubheading
-   {Local Activities}{}
-   \resumeItemListStart
-     \resumeItem{\href{https://www.meetup.com/python-atlanta/}{\underline{PyATL
-           (Python Atlanta)}} -- Frequent Speaker on Machine Learning and Data Science in Python.}
-   \resumeItemListEnd
-   \resumeSubHeadingListEnd
 
 \end{document}
