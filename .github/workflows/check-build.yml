@@ -29,7 +29,11 @@ jobs:
       - name: Verify generated files exist
         run: |
           if [ ! -f "Ryan Peach - Complete Resume.pdf" ]; then
-            echo "Error: PDF was not generated"
+            echo "Error: Ryan Peach - Complete Resume.pdf was not generated"
+            exit 1
+          fi
+          if [ ! -f "Ryan Peach - Cloud Infrastructure.pdf" ]; then
+            echo "Error: Ryan Peach - Cloud Infrastructure.pdf was not generated"
             exit 1
           fi
           echo "All files generated successfully!"

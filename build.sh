@@ -4,13 +4,13 @@
 # Exit on any error
 set -e
 
-# File name without extension
-BASENAME="Ryan Peach - Complete Resume"
+build_resume() {
+    local BASENAME="$1"
+    echo "Building PDF: ${BASENAME}.tex..."
+    pdflatex -interaction=nonstopmode "${BASENAME}.tex"
+    pdflatex -interaction=nonstopmode "${BASENAME}.tex"
+    rm -f "${BASENAME}.aux" "${BASENAME}.log" "${BASENAME}.out"
+}
 
-echo "Building PDF from LaTeX..."
-# Compile LaTeX to PDF (run twice for proper references)
-pdflatex -interaction=nonstopmode "${BASENAME}.tex"
-pdflatex -interaction=nonstopmode "${BASENAME}.tex"
-
-# Clean up auxiliary files
-rm -f "${BASENAME}.aux" "${BASENAME}.log" "${BASENAME}.out"
+build_resume "Ryan Peach - Complete Resume"
+build_resume "Ryan Peach - Cloud Infrastructure"
