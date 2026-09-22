@@ -1,7 +1,10 @@
 # Resume
 
-The complete resume is in [Ryan Peach - Complete Resume.pdf](./Ryan%20Peach%20-%20Complete%20Resume.pdf), generated from [Ryan Peach - Complete Resume.tex](./Ryan%20Peach%20-%20Complete%20Resume.tex) using LaTeX.
+Specialized resumes are generated from LaTeX source files and built to PDF:
+
+- `Ryan Peach - Cloud Infrastructure.tex`
+- `Ryan Peach - Data Engineering.tex`
 
 To rebuild, run: `./build.sh`
 
-CICD ensures that the generated resume is up to date with the TeX on every PR.
+CI/CD ensures the generated PDFs are up to date with the TeX source on every PR.
