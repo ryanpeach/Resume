@@ -173,9 +173,10 @@
       \resumeItemListStart
         \resumeItem{Architected globally available infrastructure spanning multiple regions: global databases, failover clusters, edge services, and read replicas to ensure low-latency access and high availability worldwide.}
         \resumeItem{Extended Kubernetes platform from cloud-only to hybrid on-prem and cloud environments, enabling deployment flexibility across enterprise customer sites.}
-        \resumeItem{Established enterprise Terraform practices: standardized module structure, remote state management, and onboarding patterns for teams new to IaC.}
-        \resumeItem{Implemented drift detection, policy standards, and Kyverno admission controls across Kubernetes clusters to enforce compliance and security posture at scale.}
-        \resumeItem{Designed and maintained authoritative infrastructure diagrams covering dozens of interoperating services; trained management on enterprise infrastructure model.}
+        \resumeItem{Helped establish enterprise Terraform practices: standardized module structure, remote state management, and onboarding patterns for teams new to IaC.}
+        \resumeItem{Implemented CI/CD for Terraform, multi stage deployments, automated PR rollout, and automatic semantic version control for IaC.}
+        \resumeItem{Implemented Kyverno policy standards across Kubernetes clusters to enforce compliance and security posture at scale.}
+        \resumeItem{Designed and maintained authoritative C4 infrastructure diagrams covering dozens of interoperating services.}
         \resumeItem{Designed GraphQL, gRPC, and OpenAPI APIs for core backend services, enabling independent service deployments.}
         \resumeItem{Built a source-of-truth data pipeline extracting state from Kubernetes, landing raw data in S3 for analysis and simultaneously writing to DynamoDB for low-latency operational reads.}
       \resumeItemListEnd
@@ -192,24 +193,25 @@
       \resumeSubSubheading
       {Engineering Leadership}{}
       \resumeItemListStart
-        \resumeItem{Organized teams around blast radius boundaries — each team owned a bounded set of services with defined failure domains and on-call scope.}
+        \resumeItem{Organized teams around bounded contexts using Domain-Driven Design principles. Each team owned a set of services with defined failure domains and on-call scope.}
         \resumeItem{Led HPC, Infrastructure, and ML teams through the Ansys acquisition, transitioning all to new management upon integration before moving to technical track.}
+        \resumeItem{Fast tracked teams through the creation of new individually owned CI/CD stacks giving greater velocity and flexibility on iteration and deployment.}
       \resumeItemListEnd
       \resumeSubSubheading
       {Architecture}{}
       \resumeItemListStart
         \resumeItem{Executed a strangler fig migration from a monolithic API to a microservices architecture, enabling independent deployments and clear team ownership.}
         \resumeItem{Applied Domain-Driven Design to decompose the platform into bounded contexts; established explicit API contracts between services enforced via OpenAPI specs.}
-        \resumeItem{Authored and maintained C4 architecture diagrams as the authoritative platform reference across the engineering org.}
+        \resumeItem{Authored and maintained architecture diagrams as the authoritative platform reference across the engineering org.}
         \resumeItem{Managed custom Kubernetes controller orchestrating simulation jobs on high-performance compute (HPC) infrastructure.}
         \resumeItem{Mandated GitOps workflows org-wide; overhauled CI/CD pipelines to enforce branch protection, automated testing, and deployment gates.}
-        \resumeItem{Stood up full observability stack (metrics, distributed tracing, structured logging) and led FinOps practice — reducing cloud spend while improving incident response.}
+        \resumeItem{Stood up full observability stack (metrics, distributed tracing, structured logging) and led FinOps practice, reducing cloud spend while improving incident response.}
         \resumeItem{Built Plotly dashboards surfacing key platform and business metrics, giving engineering and leadership real-time visibility into system health and usage.}
       \resumeItemListEnd
       \resumeSubSubheading
       {ML Infrastructure}{}
       \resumeItemListStart
-        \resumeItem{Architected end-to-end ML pipeline on AWS: ETL ingestion, ECS-based training, and automated periodic retraining — enabling a customer-facing simulation cost estimator.}
+        \resumeItem{Architected end-to-end ML pipeline on AWS: ETL ingestion, SageMaker-based training, and automated periodic retraining, enabling a customer-facing simulation cost estimator.}
         \resumeItem{Owned cloud resource allocation and cost governance for the ML platform, balancing training throughput against AWS spend.}
       \resumeItemListEnd
 

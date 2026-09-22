@@ -17,3 +17,24 @@ jobs:
         run: |
           sha256sum *.tex > build.sha256
           git diff --exit-code -- build.sha256 || (echo "Error: build.sha256 is out of date. Please run ./build.sh and commit the result." && exit 1)
+
+  check-page-count:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install poppler-utils
+        run: sudo apt-get install -y poppler-utils
+
+      - name: Check PDF page counts
+        run: |
+          for pdf in *.pdf; do
+            pages=$(pdfinfo "$pdf" | grep Pages | awk '{print $2}')
+            if [ "$pages" -gt 2 ]; then
+              echo "ERROR: $pdf is $pages pages (max 2)"
+              exit 1
+            fi
+            echo "$pdf: $pages pages OK"
+          done
