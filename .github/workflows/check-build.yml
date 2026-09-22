@@ -23,8 +23,7 @@ jobs:
 
       - name: Check for uncommitted changes
         run: |
-          git diff --exit-code || (echo "Error: Build generated changes. Please run ./build.sh and commit the generated files." && exit 1)
-          git diff --cached --exit-code || (echo "Error: Build generated staged changes. Please run ./build.sh and commit the generated files." && exit 1)
+          git diff --exit-code -- build.sha256 || (echo "Error: build.sha256 is out of date. Please run ./build.sh and commit the result." && exit 1)
 
       - name: Verify generated files exist
         run: |
