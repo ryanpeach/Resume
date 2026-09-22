@@ -148,15 +148,18 @@
 \section{Major Skills}
   \resumeSubHeadingListStart
     \resumeSubSubheading
+    {Python Scientific Stack, Data Science}{Expert, 2013-Present}
+    \resumeSubSubheading
+    {Machine Learning: Deep Learning, Reinforcement Learning}{MS, 2015-Present}
+    \resumeSubSubheading
+    {Apache Spark, Hadoop, Airflow, AWS EMR, Glue, Redshift, Sagemaker}{Advanced, 2017-Present}
+    \resumeSubSubheading
     {Docker, Kubernetes, AWS}{Expert, 2017-Present}
     \resumeSubSubheading
     {CI/CD \& DevOps: GitHub Actions, Jenkins, GitOps, Helm}{Expert, 2017-Present}
     \resumeSubSubheading
     {Infrastructure as Code: Terraform, CloudFormation}{Expert, 2017-Present}
-    \resumeSubSubheading
-    {Python Scientific Stack, Data Science}{Expert, 2013-Present}
-    \resumeSubSubheading
-    {Machine Learning: Deep Learning, Reinforcement Learning}{MS, 2015-Present}
+
 
   \resumeSubHeadingListEnd
 
@@ -167,6 +170,13 @@
       {Senior Principal Engineer}{2023-2026}
       {Ansys / Synopsys}{Atlanta, GA}
       \resumeSubSubheading
+      {Data Engineering}{}
+      \resumeItemListStart
+        \resumeItem{Architected Kubernetes pod-uptime watcher writing to Redis for sub-millisecond loading bar updates and DynamoDB for durable billing estimates and Salesforce billing dashboards.}
+        \resumeItem{Backed both caches with a reboot-resilient watcher appending to an immutable S3 event log --- the authoritative source of truth for all billing state.}
+        \resumeItem{Daily reconciliation job diffed DynamoDB against S3 log to detect and correct billing drift caused by watcher downtime.}
+      \resumeItemListEnd
+      \resumeSubSubheading
       {Architecture}{}
       \resumeItemListStart
         \resumeItem{Architected globally available infrastructure spanning multiple regions: global databases, failover clusters, edge services, and read replicas to ensure low-latency access and high availability worldwide.}
@@ -175,13 +185,6 @@
         \resumeItem{Implemented Kyverno policy standards across Kubernetes clusters to enforce compliance and security posture at scale.}
         \resumeItem{Designed and maintained authoritative C4 infrastructure diagrams covering dozens of interoperating services.}
         \resumeItem{Designed GraphQL, gRPC, and OpenAPI APIs for core backend services, enabling independent service deployments.}
-      \resumeItemListEnd
-      \resumeSubSubheading
-      {Data Engineering}{}
-      \resumeItemListStart
-        \resumeItem{Architected Kubernetes pod-uptime watcher writing to Redis for sub-millisecond loading bar updates and DynamoDB for durable billing estimates and Salesforce billing dashboards.}
-        \resumeItem{Backed both caches with a reboot-resilient watcher appending to an immutable S3 event log --- the authoritative source of truth for all billing state.}
-        \resumeItem{Daily reconciliation job diffed DynamoDB against S3 log to detect and correct billing drift caused by watcher downtime.}
       \resumeItemListEnd
       \resumeSubSubheading
       {Large Language Models}{}
@@ -201,6 +204,14 @@
         \resumeItem{Fast tracked teams through the creation of new individually owned CI/CD stacks giving greater velocity and flexibility on iteration and deployment.}
       \resumeItemListEnd
       \resumeSubSubheading
+      {Machine Learning Infrastructure}{}
+      \resumeItemListStart
+        \resumeItem{Architected end-to-end ML pipeline on AWS: ETL ingestion, SageMaker-based training, and automated periodic retraining, enabling a customer-facing simulation cost estimator.}
+        \resumeItem{Owned cloud resource allocation and cost governance for the ML platform, balancing training throughput against AWS spend.}
+        \resumeItem{Retraining was version-gated: pipeline tracked per-version sample counts in S3 and triggered automatically once a new simulation semantic version accumulated sufficient parameter→runtime data.}
+        \resumeItem{Post-training quality metrics dashboarded and gated deployment --- passing gates promoted the model to production automatically; failing gates escalated to manual review.}
+      \resumeItemListEnd
+      \resumeSubSubheading
       {Architecture}{}
       \resumeItemListStart
         \resumeItem{Executed a strangler fig migration from a monolithic API to a microservices architecture, enabling independent deployments and clear team ownership.}
@@ -211,18 +222,24 @@
         \resumeItem{Stood up full observability stack (metrics, distributed tracing, structured logging) and led FinOps practice, reducing cloud spend while improving incident response.}
         \resumeItem{Built Plotly dashboards surfacing key platform and business metrics, giving engineering and leadership real-time visibility into system health and usage.}
       \resumeItemListEnd
-      \resumeSubSubheading
-      {ML Infrastructure}{}
-      \resumeItemListStart
-        \resumeItem{Architected end-to-end ML pipeline on AWS: ETL ingestion, SageMaker-based training, and automated periodic retraining, enabling a customer-facing simulation cost estimator.}
-        \resumeItem{Owned cloud resource allocation and cost governance for the ML platform, balancing training throughput against AWS spend.}
-        \resumeItem{Retraining was version-gated: pipeline tracked per-version sample counts in S3 and triggered automatically once a new simulation semantic version accumulated sufficient parameter→runtime data.}
-        \resumeItem{Post-training quality metrics dashboarded and gated deployment --- passing gates promoted the model to production automatically; failing gates escalated to manual review.}
-      \resumeItemListEnd
 
     \resumeSubheading
       {Machine Learning Researcher - Lead Architect}{2017 -- 2021}
       {Keysight Technologies}{Atlanta, GA}
+      \resumeSubSubheading
+      {Machine Learning}{}
+      \resumeItemListStart
+        \resumeItem{Independently investigated almost a dozen potential ML
+          applications at the company, providing preliminary results and
+          feasibility studies.}
+        \resumeItem{Wrote approximately 7 internal publications on patentable
+          inventions; gave multiple company-wide presentations on findings.}
+        \resumeItem{Implemented large-scale hyperparameter tuning on AWS: some custom-built, others via SageMaker.}
+        \resumeItem{Applied Reinforcement Learning to multiple novel problem
+          domains using Monte Carlo Tree Search and Q Learning.}
+        \resumeItem{Built data visualizations and interactive dashboards in Plotly/Dash, Tensorboard, Matplotlib, and Jupyter.}
+        \resumeItem{Promoted from Developer to Researcher within 1 year; ranked top 10\% of performers every year at Keysight.}
+      \resumeItemListEnd
       \resumeSubSubheading
       {Architecture}{}
       \resumeItemListStart
@@ -235,20 +252,7 @@
         \resumeItem{Built ETL pipelines on AWS ingesting data into Redshift via S3 and EMR/Spark; worked with Glue for catalog and job orchestration.}
         \resumeItem{Solved a multi-terabyte tall-to-wide transformation that exhausted Spark's memory by rewriting it as an AWK streaming pipeline, eliminating memory pressure entirely and demonstrating that classical Unix tools can outperform distributed frameworks for the right workload.}
       \resumeItemListEnd
-      \resumeSubSubheading
-      {Machine Learning}{}
-      \resumeItemListStart
-        \resumeItem{Independently investigated almost a dozen potential ML
-          applications at the company, providing preliminary results and
-          feasibility studies.}
-        \resumeItem{Wrote approximately 7 internal publications on patentable
-          inventions; gave multiple company-wide presentations on findings.}
-        \resumeItem{Implemented large-scale hyperparameter tuning on AWS: some custom-built, others via SageMaker.}
-        \resumeItem{Applied Reinforcement Learning to multiple novel problem
-          domains using Monte Carlo Tree Search and Q Learning.}
-        \resumeItem{Built data visualizations and interactive dashboards in Plotly, Dash, Tensorboard, Matplotlib, Altair, and Jupyter.}
-        \resumeItem{Promoted from Developer to Researcher within 1 year; ranked top 10\% of performers every year at Keysight.}
-      \resumeItemListEnd
+
 
 
 % -----------Multiple Positions Heading-----------
