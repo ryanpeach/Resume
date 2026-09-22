@@ -15,5 +15,5 @@ build_resume() {
 build_resume "Ryan Peach - Complete Resume"
 build_resume "Ryan Peach - Cloud Infrastructure"
 
-sha256sum "Ryan Peach - Complete Resume.tex" "Ryan Peach - Cloud Infrastructure.tex" > build.sha256
+sha256sum *.tex > build.sha256
 echo "Generated build.sha256"

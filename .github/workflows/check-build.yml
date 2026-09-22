@@ -15,5 +15,5 @@ jobs:
 
       - name: Check build.sha256 is up to date
         run: |
-          sha256sum "Ryan Peach - Complete Resume.tex" "Ryan Peach - Cloud Infrastructure.tex" > build.sha256
+          sha256sum *.tex > build.sha256
           git diff --exit-code -- build.sha256 || (echo "Error: build.sha256 is out of date. Please run ./build.sh and commit the result." && exit 1)
