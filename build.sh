@@ -12,8 +12,9 @@ build_resume() {
     rm -f "${BASENAME}.aux" "${BASENAME}.log" "${BASENAME}.out"
 }
 
-build_resume "Ryan Peach - Complete Resume"
-build_resume "Ryan Peach - Cloud Infrastructure"
+for tex in *.tex; do
+    build_resume "${tex%.tex}"
+done
 
 sha256sum *.tex > build.sha256
 echo "Generated build.sha256"
